@@ -1,0 +1,17 @@
+{
+    "require": {
+        "php": ">=5.5.9",
+        "silex/silex": "~2.0",
+        "twig/twig": "^2.1",
+        "stripe/stripe-php": "^4.4"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^119.0"
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t web"
+        ]
+    }
+}

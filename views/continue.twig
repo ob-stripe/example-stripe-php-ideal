@@ -1,0 +1,20 @@
+<div id="source-updates">
+</div>
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<script type="text/javascript">
+Stripe.setPublishableKey('{{ publishable_key }}');
+
+Stripe.source.poll(
+  "{{ request.get('source') }}",
+  "{{ request.get('client_secret') }}",
+  function(status, source) {
+    var para = document.createElement("p");
+    var node = document.createTextNode("New source status: " + source.status);
+    para.appendChild(node);
+
+    var element = document.getElementById("source-updates");
+    element.appendChild(para);
+})
+</script>

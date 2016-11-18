@@ -1,0 +1,16 @@
+{
+  "name": "Stripe PHP iDEAL example",
+  "description": "Example Stripe iDEAL integration with PHP backend",
+  "repository": "https://github.com/ob-stripe/example-stripe-php-ideal",
+  "keywords": ["stripe", "php", "ideal", "sources"],
+  "env": {
+    "STRIPE_TEST_PUBLISHABLE_KEY": {
+      "description": "Stripe test publishable key -- find this at https://dashboard.stripe.com/account/apikeys (it'll look like pk_test_****)",
+      "required": true
+    },
+    "STRIPE_TEST_SECRET_KEY": {
+      "description": "Stripe test secret key -- find this at https://dashboard.stripe.com/account/apikeys (it'll look like sk_test_****)",
+      "required": true
+    }
+  }
+}
